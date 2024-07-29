@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Fancy Shoes</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>DR. MARTENS</h1>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre a loja</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <div class="sobreImg">
+          <img src="./imagens/drmartens.jpeg" alt="Ebac Shoes">
+        </div>
+        <div class="sobreTexto texto">
+          <h2>Sobre a Loja</h2>
+          <p>
+            Dr. Martens’ appeal to people who have their own individual style but share a united spirit – authentic characters who stand for something. People who possess a proud sense of self- expression. People who are different.
+            <br></br>
+            On a stylistic level, Dr. Martens’ simple silhouettes allows their wearers to adopt the boots and shoes as part of their own individual and very distinctive style; on a practical level, their famous durability and comfort make them ideal for the unforgiving world of gigs and street fashion; and then finally on an emotional level, they are a badge of attitude and empowerment.
+
+
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="produtos" class="produtos">
+      <div class="container">
+        <h2>Produtos</h2>
+        <div class="conteudoProdutos">
+          <div class="cardProduto">
+            <div class="cardProdutoImg" onmouseover="changeImage('imagens/drmartens11.webp', 'produto1')" onmouseleave="resetImage('imagens/drmartens1.webp', 'produto1')">
+              <img id="produto1" src="./imagens/drmartens1.webp" alt="Derby Couro Trevira Richards">
+            </div>
+            <div class="cardProdutoInfo">
+              <h3>JORGE MADE IN ENGLAND SUEDE SLINGBACK</h3>
+              <p>
+                COLOR:  Black — Repello 
+              </p>
+              <p class="produtoPrice">USD 240,00</p>
+              <button>Adicionar ao Carrinho</button>
+            </div>
+          </div>
+          <div class="cardProduto">
+            <div class="cardProdutoImg" onmouseover="changeImage('imagens/drmartens22.webp', 'produto2')" onmouseleave="resetImage('imagens/drmartens2.webp', 'produto2')">
+              <img id="produto2" src="./imagens/drmartens2.webp" alt="Roberto Botticelli Sapato Social">
+            </div>
+            <div class="cardProdutoInfo">
+              <h3>1461 VINTAGE MADE IN ENGLAND OXFORD SHOES</h3>
+              <p>
+                COLOR:  Black — Quilon
+              </p>
+              <p class="produtoPrice">USD 230,00</p>
+              <button>Adicionar ao Carrinho</button>
+            </div>
+          </div>
+          <div class="cardProduto">
+            <div class="cardProdutoImg" onmouseover="changeImage('imagens/drmartens33.webp', 'produto3')" onmouseleave="resetImage('imagens/drmartens3.webp', 'produto3')">
+              <img id="produto3" src="./imagens/drmartens3.webp" alt="Sapato Social Derby Brunelli">
+            </div>
+            <div class="cardProdutoInfo">
+              <h3>1460 WOMEN'S SMOOTH LEATHER LACE UP BOOTS</h3>
+              <p>
+                COLOR:  Black — Smooth
+              </p>
+              <p class="produtoPrice">USD 200,00</p>
+
+              <button>Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <div class="cardProduto">
+            <div class="cardProdutoImg" onmouseover="changeImage('imagens/drmartens44.webp', 'produto4')" onmouseleave="resetImage('imagens/drmartens4.webp', 'produto4')">
+              <img id="produto4" src="./imagens/drmartens4.webp" alt="Sapato Rafarillo Alth">
+            </div>
+            <div class="cardProdutoInfo">
+              <h3>2976 SLIP RESISTANT LEATHER BOOTS</h3>
+              <p>
+                COLOR:  Black — Industrial Grain
+              </p>
+              <p class="produtoPrice">USD 180,00</p>
+              <button>Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        © 2024 DR. Martens Todos os direitos reservados. 
+      </p>
+    </footer>
+
+    <script>
+      function changeImage(newSrc, id) {
+        var img = document.getElementById(id);
+        setTimeout(function () {
+          img.src = newSrc;
+        }, 80);
+      }
+
+      function resetImage(originalSrc, id) {
+        var img = document.getElementById(id);
+        img.src = originalSrc;
+      }
+    </script>
+</body></html>
+<head>
